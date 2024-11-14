@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UEFA Champions League Scoreboard</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container d-flex flex-column align-items-center justify-content-center min-vh-100">
+        
+        <!-- Logo and Scoreboard Container -->
+        <div class="scoreboard-container d-flex flex-column align-items-center">
+            <!-- UCL Logo -->
+            <div class="logo-space">
+                <img src="images/ucl_logo.png" alt="UCL Logo" id="ucl_logo">
+            </div>
+
+            <!-- Scoreboard -->
+            <div class="scoreboard text-center mt-4">
+                <!-- Teams and Scores Unified Box -->
+                <div class="d-flex justify-content-center align-items-center score-row">
+                    <!-- Team 1 -->
+                    <input type="text" id="team1-name" class="team-input text-center" value="CHE" maxlength="3">
+                    <input type="number" id="team1-score" class="score-input text-center" value="0" min="0">
+                    
+                    <!-- Separator -->
+                    <div class="separator mx-2">-</div>
+
+                    <!-- Team 2 -->
+                    <input type="number" id="team2-score" class="score-input text-center" value="0" min="0">
+                    <input type="text" id="team2-name" class="team-input text-center" value="AVL" maxlength="3">
+                </div>
+
+                <!-- Timer and Extra Time Row -->
+                <div class="timer-section mt-3 d-flex justify-content-center align-items-center">
+                    <div class="timer" id="timer">00:00</div>
+                    <div class="extra-time ms-3" id="extra-time">+0:00</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Control Buttons -->
+        <div class="controls mt-4">
+            <button id="start-btn" class="btn btn-dark">Start</button>
+            <button id="stop-btn" class="btn btn-dark">Stop</button>
+            <button id="reset-btn" class="btn btn-dark">Reset</button>
+            <button id="second-half-btn" class="btn btn-dark">Second Half</button>
+            <button id="custom-time-btn" class="btn btn-dark">Custom Time</button>
+            <div class="mt-2">
+              <input type="number" id="extra-time-input" placeholder="Extra Time" class="form-control d-inline-block w-auto mx-2">
+              <button id="set-extra-time-btn" class="btn btn-success">Set Extra Time</button>              
+            </div>
+        </div>
+    </div>
+</body>
+</html>

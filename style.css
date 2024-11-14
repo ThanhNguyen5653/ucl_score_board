@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #0E1E5B;
+}
+
+.container {
+  text-align: center;
+}
+
+.scoreboard-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo-space {
+  margin-bottom: -20px;
+}
+
+.logo-space img {
+  max-height: 120px;
+}
+
+/* Scoreboard Styling */
+.scoreboard {
+  background-color: #002248;
+  border-radius: 20px;
+  padding: 30px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 700px; /* Increased width */
+}
+
+.score-row {
+  background-color: #ffffff;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  width: 100%;
+}
+
+.team-input, .score-input {
+  width: 120px; /* Increased input width */
+  border: none;
+  padding: 20px;
+  text-align: center;
+  font-size: 2rem; /* Increased font size */
+  background-color: #ffffff;
+  color: #000;
+}
+
+.team-input {
+  text-transform: uppercase;
+}
+
+.separator {
+  color: #000;
+  font-size: 3rem; /* Increased font size */
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+.timer-section {
+  margin-top: 20px; /* Increased spacing */
+  display: flex;
+  align-items: center;
+}
+
+.timer {
+  background-color: #002248;
+  color: #ffffff;
+  padding: 15px 40px; /* Increased padding */
+  border-radius: 15px;
+  font-size: 4rem; /* Increased font size */
+}
+
+.extra-time {
+  display: none; /* Start hidden by default */
+  background-color: #6594C0 !important;  /* Blue background color */
+  color: #ffffff !important; /* White text */
+  padding: 15px 30px; /* Increased padding */
+  border-radius: 15px;
+  font-size: 2.5rem; /* Increased font size */
+  margin-left: 15px; /* Increased space between the timer and extra time */
+  white-space: nowrap;
+  font-weight: bold; /* Bold text */
+}
+
+
+/* Control Buttons Styling */
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px; /* Increased gap between buttons */
+  justify-content: center;
+}
+
+.controls .btn {
+  padding: 18px 25px; /* Increased padding */
+  font-size: 1.5rem; /* Increased font size */
+  font-weight: bold; /* Bold text */
+}
+
+#extra-time-input {
+  padding: 15px; /* Increased padding */
+  font-size: 1.5rem; /* Increased font size */
+  border-radius: 10px;
+  border: 2px solid #38003c;
+  width: 120px; /* Increased width */
+}
+
+/* Extra Time Button Styling */
+#set-extra-time-btn {
+  background-color: #6594C0; /* Background color */
+  color: white; /* White text */
+  padding: 18px 30px; /* Larger padding */
+  font-size: 1.5rem; /* Larger font size */
+  font-weight: bold; /* Bold text */
+  border-radius: 10px; /* Rounded corners */
+  border: none; /* No border */
+  transition: background-color 0.3s ease; /* Smooth color change on hover */
+}
+
+#set-extra-time-btn:hover {
+  background-color: #4A7C98; /* Slightly darker blue when hovered */
+}

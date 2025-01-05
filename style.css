@@ -112,11 +112,11 @@ body {
 }
 
 #extra-time-input {
-  padding: 15px; /* Increased padding */
+  padding: 10px; /* Increased padding */
   font-size: 1.5rem; /* Increased font size */
   border-radius: 10px;
   border: 2px solid #38003c;
-  width: 120px; /* Increased width */
+  width: 100px; /* Increased width */
 }
 
 /* Extra Time Button Styling */

@@ -24,7 +24,7 @@
                 <!-- Teams and Scores Unified Box -->
                 <div class="d-flex justify-content-center align-items-center score-row">
                     <!-- Team 1 -->
-                    <input type="text" id="team1-name" class="team-input text-center" value="CHE" maxlength="3">
+                    <input type="text" id="team1-name" class="team-input text-center" value="***" maxlength="3">
                     <input type="number" id="team1-score" class="score-input text-center" value="0" min="0">
                     
                     <!-- Separator -->
@@ -32,7 +32,7 @@
 
                     <!-- Team 2 -->
                     <input type="number" id="team2-score" class="score-input text-center" value="0" min="0">
-                    <input type="text" id="team2-name" class="team-input text-center" value="AVL" maxlength="3">
+                    <input type="text" id="team2-name" class="team-input text-center" value="***" maxlength="3">
                 </div>
 
                 <!-- Timer and Extra Time Row -->
@@ -45,14 +45,12 @@
 
         <!-- Control Buttons -->
         <div class="controls mt-4">
-            <button id="start-btn" class="btn btn-dark">Start</button>
-            <button id="stop-btn" class="btn btn-dark">Stop</button>
+            <button id="start-stop-btn" class="btn btn-dark">Start/Stop</button>
             <button id="reset-btn" class="btn btn-dark">Reset</button>
             <button id="second-half-btn" class="btn btn-dark">Second Half</button>
             <button id="custom-time-btn" class="btn btn-dark">Custom Time</button>
             <div class="mt-2">
-              <input type="number" id="extra-time-input" placeholder="Extra Time" class="form-control d-inline-block w-auto mx-2">
-              <button id="set-extra-time-btn" class="btn btn-success">Set Extra Time</button>              
+                <input type="number" id="extra-time-input" placeholder="Extra Time" class="form-control d-inline-block w-auto mx-2">
             </div>
         </div>
     </div>
